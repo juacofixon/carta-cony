@@ -6,14 +6,21 @@ const loginContainer = document.getElementById("login-container");
 const letterContainer = document.getElementById("letter-container");
 const messageElement = document.getElementById("message");
 
-// Texto de la carta
-const messageText = `Querida Constanza,
+// Texto de la carta actualizado
+const messageText = `Querida Amada,
 
-Siempre me has inspirado a ser una mejor persona, y quiero que sepas cuánto te valoro.
+Quiero aprovechar esta oportunidad para agradecerte por todo lo que haces por mi, 
+desde tu mensaje por las mañanas, hasta el mas minimo detalle que tienes conmigo. 
+Eres una persona muy importante para mí, 
+y me siento increíblemente afortunado de tenerte en mi vida.
 
-Eres mi compañera, mi confidente y mi mejor amiga.
+Espero que podamos seguir juntos por mucho tiempo, porque realmente deseo estar a tu lado siempre. 
+También quiero disculparme si en algún momento no te he hecho sentir bien; 
+sabes cuánto me importas y cuánto valoro nuestra relación...
 
-Espero que este pequeño gesto te saque una sonrisa.
+Eres maravillosa, me encanta cada detalle de ti, 
+especialmente ese culazo que tienes mami, sabes que me encanta. 
+Siempre te lo diré porque nunca me cansaré de decirtelo.
 
 Con todo mi amor,
 
@@ -65,20 +72,4 @@ function typeLetter() {
         setTimeout(typeLetter, 100); // Ajusta el tiempo para hacer la escritura más rápida o más lenta
     }
 }
-
-// script.js
-
-document.getElementById('register-form').addEventListener('submit', function(event) {
-    const passwordInput = document.getElementById('register-password');
-    const password = passwordInput.value;
-
-    // Expresión regular para verificar al menos una letra mayúscula
-    const hasUpperCase = /[A-Z]/.test(password);
-
-    if (!hasUpperCase) {
-        // Evita el envío del formulario si no contiene una letra mayúscula
-        event.preventDefault();
-        alert('La contraseña debe contener al menos una letra mayúscula.');
-    }
-});
 
